@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.footerTop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #e5e7e9;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 1200;
+  font-size: x-large;
+  cursor: default;
+  color: #898989;
+  font-family: "Permanent Marker", cursive;
+}
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.menuItem{
+    background-color: #c1c3c5;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 50px;
+}
+.menuItem ul {
+  list-style: none;
+ 
+}
+.footerMenu ul h1 {
+    font-size: 35px;
+    cursor: default;
+    padding-bottom: 10px;
+    font-family: "Abel", sans-serif;
+    letter-spacing: 5px;
+}
+.footerMenu ul li a {
+  text-decoration: none;
+  font-size: 25px;
+}
+.footerMenu ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footerBot{
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .footerPage {
+    flex-direction: column;
+    width: 430px;
+  }
+  .menuItem{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+}

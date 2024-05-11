@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.sponsorInfoPage{
+    display: flex;
+    gap: 50px;
+}
+.SponsorCard {
+  width: 450px;
+  height: 250px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 5px;
+}
+.cardText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.cardText h1 {
+  font-size: 40px;
+  color: #225b6d;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+}
+.cardText p {
+    color: #549cb3;
+    font-size: 20px;
+}
+
+.cardImg img {
+  width: 120px;
+  height: 120px;
+}
+
+@media only screen and (max-width:600px){
+    .sponsorInfoPage{
+        flex-direction: column;
+    }
+    .SponsorCard{
+        gap: 0;
+        padding:30px;
+    }
+    .cardImg img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1200px){
+    .sponsorInfoPage{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .SponsorCard{
+        gap: 0;
+        padding:30px;
+        
+    }
+    .cardImg img {
+        width: 90px;
+        height: 90px;
+        flex-wrap: wrap;
+    }
+}
